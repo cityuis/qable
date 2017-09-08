@@ -2,7 +2,7 @@ require "minitest"
 require "cucumber"
 require "capybara/cucumber"
 
-config = YAML.load_file(File.join(Dir.pwd, "config.yml")
+config = YAML.load_file(File.join(Dir.pwd, "config.yml"))
 
 Capybara.default_driver = :selenium_chrome_headless
 Capybara.javascript_driver = :selenium_chrome_headless
