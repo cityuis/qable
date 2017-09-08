@@ -1,0 +1,5 @@
+task :default => :cucumber
+task :cucumber do
+  sh "cucumber -r features features/*.feature  -f pretty -f html -o report.html"
+  sh "open report.html"
+end
