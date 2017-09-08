@@ -1,1 +1,1 @@
-require "qaable/cucumber"
+require_relative "qaable/cucumber"
