@@ -35,4 +35,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "cucumber"
   spec.add_dependency "capybara"
   spec.add_dependency "selenium-webdriver"
+  spec.add_dependency "capybara-screenshot"
 end

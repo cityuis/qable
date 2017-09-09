@@ -1,6 +1,7 @@
 require "minitest"
 require "cucumber"
 require "capybara/cucumber"
+require "capybara-screenshot/cucumber"
 require "selenium/webdriver"
 
 config = YAML.load_file(File.join(Dir.pwd, "config.yml"))
