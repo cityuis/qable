@@ -1,13 +1,15 @@
 # <%= name.capitalize %>
 
-## Installing
+## Usage
 
-```
-bundle install
-```
-
-## Running
+### Running tests
 
 ```
 bundle exec rake
 ```
+
+### Referencing Paths
+
+### Adding custom step definitions
+
+### Visualizing Failing tests
