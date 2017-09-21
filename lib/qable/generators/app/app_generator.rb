@@ -17,6 +17,7 @@ module Qable
             create_gemfile
             create_rakefile
             create_config
+            create_gitignore
             create_features_directory
             run_bundle
           end
@@ -25,19 +26,23 @@ module Qable
         private
 
           def create_gemfile
-            template('templates/Gemfile', "Gemfile")
+            template('templates/Gemfile', 'Gemfile')
           end
 
           def create_rakefile
-            template('templates/Rakefile', "Rakefile")
+            template('templates/Rakefile', 'Rakefile')
           end
 
           def create_config
-            template('templates/config.yml', "config.yml")
+            template('templates/config.yml', 'config.yml')
+          end
+
+          def create_gitignore
+            template('templates/gitignore', '.gitignore')
           end
 
           def create_features_directory
-            directory('templates/features', "features")
+            directory('templates/features', 'features')
           end
 
           def run_bundle
