@@ -7,13 +7,13 @@ TODO: Description of the project.
 
 Install it yourself as:
 
-    $ gem install qable-cucumber
+    $ gem install qable
 
 ## Usage
 
 Create a new project:
 
-    $ qable-cucumber myapp
+    $ qable myapp
 
 Run the tests in the new project:
 

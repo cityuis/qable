@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "qable/cucumber/version"
+require "qable/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "qable-cucumber"
-  spec.version       = Qable::Cucumber::VERSION
+  spec.name          = "qable"
+  spec.version       = Qable::VERSION
   spec.authors       = ["Guillermo Iguaran"]
   spec.email         = ["guilleiguaran@gmail.com"]
 
