@@ -19,3 +19,13 @@ end
 World do
   TestAppWorld.new
 end
+
+Capybara::Screenshot.class_eval do
+  register_driver(:selenium_chrome) do |driver, path|
+    driver.browser.save_screenshot(path)
+  end
+
+  register_driver(:selenium_chrome_headless) do |driver, path|
+    driver.browser.save_screenshot(path)
+  end
+end
