@@ -3,11 +3,9 @@
 
 _The title should be concise, clear, and informative. It must be clear and descriptive so that you can get an idea of what the report is about at a quick glance.  The description must respond to the following questions:_
 
- > a. What is the problem?
- 
- > b. What action must the user perform to trigger the problem?
- 
- > c. Where does the problem occur?
+> 1. What is the problem?
+> 2. What action must the user perform to trigger the problem?
+> 3. Where does the problem occur?
 
 ## 2.  Description
 
@@ -38,7 +36,7 @@ _The screenshot should help to understand better the bug, clarify what is going 
 > 2. Step 2 to reproduce
 > 3. Step 3 to reproduce
 
- _Also, Include the relevant Attachment or GIF reflecting  where this broken functionality _
+_Also, Include the relevant Attachment or GIF reflecting  where this broken functionality_
 
 
 ## 6. Current Result 
