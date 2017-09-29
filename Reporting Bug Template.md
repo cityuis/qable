@@ -4,9 +4,9 @@
 
 _The title should be concise, clear, and informative. It must be clear and descriptive so that you can get an idea of what the report is about at a quick glance.  The description must respond to the following questions:_
 
- $ a. What is the problem?
- $ b. What action must the user perform to trigger the problem?
- $ c. Where does the problem occur?
+ > a. What is the problem?
+ > b. What action must the user perform to trigger the problem?
+ > c. Where does the problem occur?
 
 
 ---
