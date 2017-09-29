@@ -1,33 +1,33 @@
 ---
 
-#1. Title
+## 1. Title
 
 _The title should be concise, clear, and informative. It must be clear and descriptive so that you can get an idea of what the report is about at a quick glance.  The description must respond to the following questions:_
 
-> a. What is the problem?
-> b. What action must the user perform to trigger the problem?
-> c. Where does the problem occur?
+ $ a. What is the problem?
+ $ b. What action must the user perform to trigger the problem?
+ $ c. Where does the problem occur?
 
 
 ---
 
-#2.  Description
+## 2.  Description
 
 _You should  explain the defect and illustrate all the pertinent details. Do not use vague language such as "crashed" or "failed" instead include an error message, or indicate exactly what happened._
 
 ---
 
-#3. Browser / SO 
+## 3. Browser / SO 
 
 _You have to specify the browser and the SO in where you found a bug._
 
 ---
 
-# 4. Precondition: 
+## 4. Precondition: 
 
 _Generally, we should describe the data and the steps that we need to record before running the test below. Example:_
 
-> Precond. 1: Given there's an active Staff _"Super Admin"_ with the email admin@able.co and password letmein1
+$ Precond. 1: Given there's an active Staff _"Super Admin"_ with the email admin@able.co and password letmein1
 
 ---
 
@@ -39,9 +39,9 @@ Also, don’t forget annotate screenshots are extremely helpful. If possible, in
 _The screenshot should help to understand better the bug, clarify what is going on, but cannot be the only description.
  For example:_
 
-> 1. Step 1 to reproduce
-> 2. Step 2 to reproduce
-> 3. Step 3 to reproduce
+$ 1. Step 1 to reproduce
+$ 2. Step 2 to reproduce
+$ 3. Step 3 to reproduce
 
  _Also, Include the relevant Attachment or GIF reflecting  where this broken functionality _
 
