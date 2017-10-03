@@ -19,6 +19,7 @@ module Qable
             create_config
             create_gitignore
             create_features_directory
+            create_page_objects_directory
             create_reports_directory
             run_bundle
           end
@@ -44,6 +45,10 @@ module Qable
 
           def create_features_directory
             directory('templates/features', 'features')
+          end
+
+          def create_page_objects_directory
+            empty_directory 'page_objects'
           end
 
           def create_reports_directory
