@@ -4,7 +4,12 @@ site: https://google.com
 # selenium: requires geckodriver https://github.com/DevicoSolutions/geckodriver-helper
 # selenium_chrome, selenium_chrome_headless: requires chromedriver https://github.com/flavorjones/chromedriver-helper
 # webkit: requires capybara-webkit https://github.com/thoughtbot/capybara-webkit
-driver: selenium_chrome_headless
+# driver: selenium_chrome_headless
+
+browsers:
+  - chrome
+  - firefox
+  # - safari
 
 paths:
   home: /

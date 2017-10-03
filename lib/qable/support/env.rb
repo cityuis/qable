@@ -4,12 +4,23 @@ require "capybara/cucumber"
 require "capybara-screenshot/cucumber"
 require "selenium/webdriver"
 
+Capybara.register_driver :selenium_safari do |app|
+  Capybara::Selenium::Driver.new(app, browser: :safari)
+end
+
 config = YAML.load_file(File.join(Dir.pwd, "config.yml"))
 
-Capybara.default_driver = config["driver"].to_sym
-Capybara.javascript_driver = config["driver"].to_sym
+driver_for_browser = {
+ "chrome" => :selenium_chrome_headless,
+ "firefox" => :selenium,
+ "safari" => :selenium_safari
+}
+
+Capybara.default_driver = driver_for_browser[ENV["BROWSER"]] || config["driver"].to_sym
+Capybara.javascript_driver = driver_for_browser[ENV["BROWSER"]] || config["driver"].to_sym
 Capybara.run_server = false
 Capybara.app_host = config["site"] || "http://localhost:3000"
+Capybara.save_path = File.join(Dir.pwd, "reports")
 
 class TestAppWorld
   include Capybara::DSL
@@ -26,6 +37,10 @@ Capybara::Screenshot.class_eval do
   end
 
   register_driver(:selenium_chrome_headless) do |driver, path|
+    driver.browser.save_screenshot(path)
+  end
+
+  register_driver(:selenium_safari) do |driver, path|
     driver.browser.save_screenshot(path)
   end
 end
