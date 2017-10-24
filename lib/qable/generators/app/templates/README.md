@@ -10,6 +10,16 @@ bundle install
 
 With the dependencies installed you can proceed to run tests.
 
+## Browsers Support
+
+QAble supports Chrome and Firefox by default in OSX and Linux
+without installing any extra dependencies.
+
+Internet Explorer and Edge are supported through a Selenium
+Server (instructions about setting a server are below)
+
+Safari support under OS X is under work.
+
 ## Running tests
 
 ```
