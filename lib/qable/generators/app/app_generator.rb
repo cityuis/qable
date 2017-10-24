@@ -14,6 +14,7 @@ module Qable
           self.destination_root = File.expand_path(name, destination_root)
           empty_directory '.'
           inside destination_root do
+            create_readme
             create_gemfile
             create_rakefile
             create_config
@@ -26,6 +27,10 @@ module Qable
         end
 
         private
+
+          def create_readme
+            template('templates/README.md', 'README.md')
+          end
 
           def create_gemfile
             template('templates/Gemfile', 'Gemfile')

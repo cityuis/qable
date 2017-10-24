@@ -1,4 +1,4 @@
-# Qable::Cucumber
+# Qable
 
 TODO: Description of the project.
 
