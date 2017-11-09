@@ -1,6 +1,7 @@
 # Qable
 
-TODO: Description of the project.
+Qable is a acceptance testing framework based in Cucumber/Capybara with
+Page Object Model DSL and multi-browser support.
 
 
 ## Installation
@@ -19,6 +20,8 @@ Run the tests in the new project:
 
     $ cd myapp
     $ bundle exec rake
+
+Read more about how to use Qable in the project's README.
 
 ## Development
 
