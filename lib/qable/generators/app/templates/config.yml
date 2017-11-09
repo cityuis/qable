@@ -9,9 +9,9 @@ site: https://google.com
 browsers:
   - chrome
   - firefox
-  # - safari
   # - edge
   # - ie
+  # - safari
 
 # Set this to be able to use Edge and IE with a remote server, this should be the full Selenium Hub URL, e.g: http://<CI-HOST>:4444/wd/hub
 remote_ci_url:
