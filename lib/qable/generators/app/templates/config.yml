@@ -1,11 +1,7 @@
+# The url of the site to run tests.
 site: https://google.com
 
-# Supported options:
-# selenium: requires geckodriver https://github.com/DevicoSolutions/geckodriver-helper
-# selenium_chrome, selenium_chrome_headless: requires chromedriver https://github.com/flavorjones/chromedriver-helper
-# webkit: requires capybara-webkit https://github.com/thoughtbot/capybara-webkit
-# driver: selenium_chrome_headless
-
+# List of browsers to run tests, note that Edge and IE requires setting a value for `remote_ci_url` below.
 browsers:
   - chrome
   - firefox
@@ -13,8 +9,16 @@ browsers:
   # - ie
   # - safari
 
+# Using custom Capybara drivers:
+# `selenium`: requires geckodriver https://github.com/DevicoSolutions/geckodriver-helper
+# `selenium_chrome`, `selenium_chrome_headless`: requires chromedriver https://github.com/flavorjones/chromedriver-helper
+# `webkit`: requires capybara-webkit https://github.com/thoughtbot/capybara-webkit
+# driver: selenium_chrome_headless
+
 # Set this to be able to use Edge and IE with a remote server, this should be the full Selenium Hub URL, e.g: http://<CI-HOST>:4444/wd/hub
 remote_ci_url:
 
+# Add custom path names to use in steps, e.g: "Given I go to login page"
 paths:
   home: /
+  # login: /sign_up
