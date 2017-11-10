@@ -10,6 +10,12 @@ bundle install
 
 With the dependencies installed you can proceed to run tests.
 
+## Configuration
+
+The project is configured through the `config.yml` file in the root directory.
+see this file for all the values that can be configured and examples about how
+to set them.
+
 ## Browsers Support
 
 QAble supports Chrome and Firefox by default in OSX and Linux
@@ -31,6 +37,12 @@ the `config.yml` in project directory.
 
 The results of the tests are displayed in console and saved to `reports`
 folder on the project.
+
+## Available Steps
+
+By default Qable include a set of tests useful for testing the behavior
+of web sites. See the [Web Steps file](https://github.com/ableco/qable/blob/master/lib/qable/step_definitions/web_steps.rb)
+to learn about the available stepts.
 
 ## Referencing Paths
 
@@ -80,8 +92,11 @@ for more details about using Page Object Model DSL.
 
 ## Windows Browsers support through Selenium Server
 
-QAble can be used with Selenium Server to run tests in browsers not
+QAble can be used with Selenium Server to run tests in Windows for browsers not
 supported by OS X.
+
+The next steps can be executed in a Windows machine to configure Selenium Server
+along with IE driver and Edge's Web Driver for Selenium:
 
 First download `selenium-server-standalone` and `IEDriverServer` from
 [Selenium website](http://selenium-release.storage.googleapis.com/index.html?path=3.6/)
