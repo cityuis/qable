@@ -21,7 +21,7 @@ Run the tests in the new project:
     $ cd myapp
     $ bundle exec rake
 
-Read more about how to use Qable in the project's README.
+Read more about how to use Qable in the [project's README](https://github.com/ableco/qable/blob/master/lib/qable/generators/app/templates/README.md).
 
 ## Development
 
@@ -31,4 +31,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/ableco/qable-cucumber.
+Bug reports and pull requests are welcome on GitHub at https://github.com/ableco/qable.
+
+## Copyright
+
+Copyright (c) 2017 Able.co. See LICENSE for further details.
