@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Qable::VERSION
   spec.authors       = ["Guillermo Iguaran"]
   spec.email         = ["guilleiguaran@gmail.com"]
-
+  s.licenses         = ['MIT']
   spec.summary       = %q{Qable acceptance testing framework}
   spec.description   = %q{Qable acceptance testig framework based in Cucumber/Capybara}
   spec.homepage      = "https://github.com/ableco/qable"
