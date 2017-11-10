@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Guillermo Iguaran"]
   spec.email         = ["guilleiguaran@gmail.com"]
 
-  spec.summary       = %q{Qable Cucumber framework}
-  spec.description   = %q{Qable Cucumber framework for QA}
-  spec.homepage      = "https://github.com/ableco/qable-cucumber"
+  spec.summary       = %q{Qable acceptance testing framework}
+  spec.description   = %q{Qable acceptance testig framework based in Cucumber/Capybara}
+  spec.homepage      = "https://github.com/ableco/qable"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -29,11 +29,11 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "bundler"
-  spec.add_dependency "rake"
-  spec.add_dependency "minitest"
-  spec.add_dependency "cucumber"
-  spec.add_dependency "capybara"
-  spec.add_dependency "selenium-webdriver"
-  spec.add_dependency "capybara-screenshot"
+  spec.add_dependency "bundler", "~> 1.15"
+  spec.add_dependency "rake", "~> 12"
+  spec.add_dependency "minitest", "~> 5"
+  spec.add_dependency "cucumber", "~> 3.0"
+  spec.add_dependency "capybara", "~> 2.15"
+  spec.add_dependency "selenium-webdriver", "~> 3.7"
+  spec.add_dependency "capybara-screenshot", "~> 1.0"
 end
