@@ -18,13 +18,15 @@ to set them.
 
 ## Browsers Support
 
-QAble supports Chrome and Firefox by default in OSX and Linux
-without installing any extra dependencies.
+QAble supports Chrome and Firefox by default in all the OS supported by Selenium (OS X, Linux, Windows, ...)
+without installing any extra dependencies if the browsers are installed (e.g you need to install Firefox to run tests in Firefox).
 
-Internet Explorer and Edge are supported through a Selenium
-Server (instructions about setting a server are below)
+Tests can be executed in Internet Explorer and Edge if a Windows Machine with Selenium
+Server is set and configured. (instructions about setting a server are below in the `Windows Browsers support through Selenium Server` section)
 
 Safari support under OS X is under work.
+
+Internet Explorer and Edge under Windows will be supported soon.
 
 ## Running tests
 
