@@ -4,6 +4,7 @@ Bundler.require
 
 task :default => :cucumber
 task :cucumber do
+  Dir.mkdir("reports") unless Dir.exist?("reports")
   browsers = YAML.load_file(File.join(Dir.pwd, "config.yml"))["browsers"]
   time = Time.now.iso8601
   browsers.each do |browser|
