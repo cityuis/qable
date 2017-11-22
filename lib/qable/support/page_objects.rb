@@ -1,6 +1,5 @@
 begin
   require 'site_prism'
-  Capybara.default_selector = :xpath
 
   SitePrism.configure do |config|
     config.use_implicit_waits = true
