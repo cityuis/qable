@@ -19,6 +19,13 @@ After do |scenario|
   # The +scenario+ argument is optional, but
   # if you use it, you can inspect status with
   # the #failed?, #passed? and #exception methods.
+
+  # Prevent browser closing if an scenario fails, useful for debugging purposes
+  # if scenario.failed?
+  #   puts "\nStopped due to a failed scenario"
+  #   print "Please Press return key to close browser"
+  #   STDIN.getc
+  # end
 end
 
 #Tagged hooks
