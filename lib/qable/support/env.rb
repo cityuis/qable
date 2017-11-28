@@ -7,7 +7,8 @@ require "selenium/webdriver"
 config = YAML.load_file(File.join(Dir.pwd, "config.yml"))
 
 driver_for_browser = {
- "chrome" => :selenium_chrome_headless,
+ "chrome" => :selenium_chrome,
+ "chrome_headless" => :selenium_chrome_headless,
  "firefox" => :selenium,
  "safari" => :selenium_safari,
  "edge" => :remote_edge,

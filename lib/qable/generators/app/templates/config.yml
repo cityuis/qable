@@ -5,6 +5,7 @@ site: https://google.com
 browsers:
   - chrome
   - firefox
+  # - chrome_headless
   # - edge
   # - ie
   # - safari
