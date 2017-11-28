@@ -1,5 +1,5 @@
 # The url of the site to run tests.
-site: https://google.com
+site: https://en.wikipedia.org
 
 # List of browsers to run tests, note that Edge and IE requires setting a value for `remote_ci_url` below.
 browsers:
